@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charcosmear | Eco-Friendly Motorcycle Care</title>
+    <meta name="description" content="Charcosmear - Pengkilap & Penghitam bodi motor ramah lingkungan. Natural ingredients, hasil maksimal!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        'gold-light': '#F4D03F',
+                        olive: '#6B7C3A',
+                        'olive-dark': '#4A5A2A',
+                        dark: '#0A0A0A',
+                        'dark-gray': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <!-- Logo Icon CL -->
+                    <div class="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center">
+                        <img src="assets/images/Logo Charcosmear.png" alt="Logo Charcosmear" class="object-cover rounded-full">
+                    </div>
+                    <!-- Brand Name Updated -->
+                    <span class="text-xl font-bold font-heading">Charcosmear</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#produk" class="text-gray-300 hover:text-gold transition">Produk</a>
+                    <a href="#keunggulan" class="text-gray-300 hover:text-gold transition">Keunggulan</a>
+                    <a href="#cara-pakai" class="text-gray-300 hover:text-gold transition">Cara Pakai</a>
+                    <a href="#kontak" class="text-gray-300 hover:text-gold transition">Kontak</a>
+                </div>
+                <a href="https://s.shopee.co.id/40cHRS1IVh" target="_blank" class="gradient-gold text-dark px-6 py-2 rounded-full font-semibold hover-glow">
+                    <i class="fas fa-shopping-bag mr-2"></i>Beli Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <div class="flex justify-center mb-6">
+                    <div class="w-20 h-20 rounded-full border-4 border-gold flex items-center justify-center glow-effect">
+                        <img src="assets/images/Logo Charcosmear.png" alt="Logo Charcosmear Besar" class="rounded-full object-cover glow-effect">
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    Level Up Your <span class="text-gradient">Ride!</span> 🔥
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Lebih shine, lebih clean, tetap <span class="text-olive font-semibold">eco-friendly</span> 🌿
+                </p>
+                <p class="text-gray-400 mb-12 max-w-xl mx-auto">
+                    Bersama <span class="text-white font-bold">Charcosmear</span>. Perawatan motor dengan bahan alami. Bikin motor lo kinclong maksimal tanpa merusak lingkungan!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://s.shopee.co.id/40cHRS1IVh" target="_blank" class="gradient-gold text-dark px-8 py-4 rounded-full font-bold text-lg hover-glow flex items-center">
+                        <i class="fas fa-shopping-bag mr-2"></i>
+                        Beli di Shopee
+                    </a>
+                    <a href="https://www.instagram.com/charcosmear.id" target="_blank" class="border-2 border-gold text-gold px-8 py-4 rounded-full font-bold text-lg hover:bg-gold hover:text-dark transition flex items-center">
+                        <i class="fab fa-instagram mr-2"></i>
+                        Follow Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@charcosmear.id" target="_blank" class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-dark transition flex items-center">
+                        <i class="fab fa-tiktok mr-2"></i>
+                        TikTok
+                    </a>
+                </div>
+
+                <div class="mt-16 flex justify-center space-x-8 text-gray-400">
+                    <div class="flex items-center">
+                        <i class="fas fa-leaf text-olive mr-2"></i>
+                        <span>Eco-Friendly</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-flask text-gold mr-2"></i>
+                        <span>Natural Ingredients</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-award text-olive mr-2"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="py-20 bg-dark-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-dark p-8 rounded-2xl border border-red-500/30">
+                    <h3 class="text-2xl font-bold text-red-400 mb-6"><i class="fas fa-times-circle mr-2"></i>Masalah Kamu:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-3">❌</span>
+                            <span class="text-gray-300">Bodi motor kusam & pudar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-3">❌</span>
+                            <span class="text-gray-300">Mudah kotor & berdebu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-3">❌</span>
+                            <span class="text-gray-300">Jok motor terlihat usang</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-400 mr-3">❌</span>
+                            <span class="text-gray-300">Malu pas kumpul sama komunitas</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-olive-dark to-olive p-8 rounded-2xl border border-olive/50">
+                    <h3 class="text-2xl font-bold text-white mb-6"><i class="fas fa-check-circle mr-2"></i>Solusinya:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">✅</span>
+                            <span class="text-white font-semibold">Charcosmear: Eco-friendly motorcycle care</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">✅</span>
+                            <span class="text-white">Natural ingredients (Charcoal, Coconut Oil, Lemon Oil, Beeswax)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">✅</span>
+                            <span class="text-white">Hasil awet & proteksi ekstra</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3">✅</span>
+                            <span class="text-white">Free pad applicator setiap pembelian</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Produk <span class="text-gradient">Kami</span></h2>
+                <p class="text-gray-400 text-lg">Pilih perawatan yang tepat untuk motor kesayanganmu</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Product 1: Pengkilap -->
+                <div class="product-card bg-dark-gray rounded-3xl overflow-hidden border border-white/10">
+                    <div class="gradient-olive h-2"></div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold">✨ Pengkilap Body Motor</h3>
+                            <span class="gradient-gold text-dark px-3 py-1 rounded-full text-sm font-bold">BEST SELLER</span>
+                        </div>
+                        
+                        <div class="bg-dark rounded-xl p-6 mb-6 text-center">
+                            <!-- Placeholder Icon (Nanti bisa diganti gambar) -->
+                            <div class="w-full h-full mx-auto bg-gradient-to-br from-olive to-olive-dark rounded-xl p-4 border border-white/2 flex items-center justify-center mb-6">
+                                <img src="assets/images/Shopee1.jpg" alt="Produk Pengkilap Bodi Motor" class="w-full h-full object-contain hover:scale-110 transition duration-300">
+                            </div>
+                            <p class="text-gray-400 text-sm">Isi 100 ML + FREE Pad Applicator</p>
+                        </div>
+
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Mengilapkan bodi motor
+                            </li>
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Kilap alami, <span class="text-gold font-semibold">tidak merusak</span>
+                            </li>
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Membersihkan debu & kotoran
+                            </li>
+                        </ul>
+
+                        <div class="bg-dark/50 rounded-xl p-4 mb-6">
+                            <p class="text-sm text-gray-400 mb-2"><i class="fas fa-leaf text-olive mr-2"></i>Natural Ingredients:</p>
+                            <p class="text-white font-semibold">Charcoal • Coconut Oil • Lemon Oil</p>
+                        </div>
+
+                        <a href="https://s.shopee.co.id/40cHRS1IVh" target="_blank" class="block w-full gradient-gold text-dark text-center py-4 rounded-xl font-bold text-lg hover-glow">
+                            Beli Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Penghitam -->
+                <div class="product-card bg-dark-gray rounded-3xl overflow-hidden border border-white/10">
+                    <div class="gradient-gold h-2"></div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold">⚫ Penghitam Body Kasar</h3>
+                            <span class="bg-olive text-white px-3 py-1 rounded-full text-sm font-bold">NEW</span>
+                        </div>
+                        
+                        <div class="bg-dark rounded-xl p-6 mb-6 text-center">
+                            <!-- Placeholder Icon -->
+                            <div class="w-32 h-32 mx-auto bg-gradient-to-br from-gold to-gold-light rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-fill-drip text-5xl text-dark"></i>
+                            </div>
+                            <p class="text-gray-400 text-sm">Isi 100 ML + FREE Pad Applicator</p>
+                        </div>
+
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Menghitamkan body kasar
+                            </li>
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Meratakan warna kusam
+                            </li>
+                            <li class="flex items-center text-gray-300">
+                                <i class="fas fa-check text-gold mr-3"></i>
+                                Minim residu & tahan lama
+                            </li>
+                        </ul>
+
+                        <div class="bg-dark/50 rounded-xl p-4 mb-6">
+                            <p class="text-sm text-gray-400 mb-2"><i class="fas fa-leaf text-olive mr-2"></i>Natural Ingredients:</p>
+                            <p class="text-white font-semibold">Charcoal 100 Mesh • Beeswax</p>
+                        </div>
+
+                        <a href="https://s.shopee.co.id/10yfryd3HM" target="_blank" class="block w-full gradient-gold text-dark text-center py-4 rounded-xl font-bold text-lg hover-glow">
+                            Beli Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-24 bg-dark-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Lihat <span class="text-gradient">Perbedaannya!</span></h2>
+                <p class="text-gray-400 text-lg">Hasil nyata dari Charcosmear</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Before -->
+                <div class="relative rounded-2xl overflow-hidden border-2 border-gold/30">
+                    <div class="aspect-video bg-dark flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <img src="assets/images/BeforeAfter1.jpg" alt="Before After 1" class="w-full h-full md:h-80 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After -->
+                <div class="relative rounded-2xl overflow-hidden border-2 border-gold/30">
+                    <div class="absolute top-4 right-4 bg-olive text-white px-4 py-2 rounded-lg font-bold z-10">AFTER</div>
+                    <div class="aspect-video bg-gradient-to-br from-olive-dark to-dark flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <i class="fas fa-motorcycle text-6xl text-gold mb-4"></i>
+                            <p class="text-white">Tampilan kembali bersih dan mengkilap dengan hasil yang lebih awet serta perlindungan ekstra terhadap air dan debu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gold text-xl font-semibold mb-6">Karena yang bagus itu bukan cuma tampilan, tapi juga impact-nya. 🌿</p>
+                <a href="https://id.shp.ee/3dh8hdl9" target="_blank" class="inline-flex items-center text-gray-300 hover:text-gold transition">
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Lihat Video Produk di Shopee
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="keunggulan" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Kenapa <span class="text-gradient">Charcosmear?</span></h2>
+                <p class="text-gray-400 text-lg">Alasan kenapa produk kami berbeda</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-dark-gray rounded-2xl border border-white/10 hover:border-gold/50 transition">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-olive flex items-center justify-center">
+                        <i class="fas fa-leaf text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Eco-Friendly</h3>
+                    <p class="text-gray-400 text-sm">Ramah lingkungan, aman untuk motor & alam</p>
+                </div>
+
+                <div class="text-center p-6 bg-dark-gray rounded-2xl border border-white/10 hover:border-gold/50 transition">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center">
+                        <i class="fas fa-flask text-2xl text-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Natural Ingredients</h3>
+                    <p class="text-gray-400 text-sm">Charcoal, Coconut Oil, Lemon Oil, Beeswax</p>
+                </div>
+
+                <div class="text-center p-6 bg-dark-gray rounded-2xl border border-white/10 hover:border-gold/50 transition">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold to-olive flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Hasil Awet</h3>
+                    <p class="text-gray-400 text-sm">Proteksi ekstra terhadap air & debu</p>
+                </div>
+
+                <div class="text-center p-6 bg-dark-gray rounded-2xl border border-white/10 hover:border-gold/50 transition">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center">
+                        <i class="fas fa-gift text-2xl text-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Free Gift</h3>
+                    <p class="text-gray-400 text-sm">Setiap pembelian gratis pad applicator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section id="cara-pakai" class="py-24 bg-dark-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Cara <span class="text-gradient">Pakai</span></h2>
+                <p class="text-gray-400 text-lg">Mudah dan cepat, cuma 5 langkah!</p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center text-3xl font-bold text-dark">1</div>
+                    <h3 class="font-bold mb-2">Bersihkan</h3>
+                    <p class="text-gray-400 text-sm">Bersihkan bodi motor dari debu</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center text-3xl font-bold text-dark">2</div>
+                    <h3 class="font-bold mb-2">Kocok</h3>
+                    <p class="text-gray-400 text-sm">Kocok botol terlebih dahulu</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center text-3xl font-bold text-dark">3</div>
+                    <h3 class="font-bold mb-2">Tuang</h3>
+                    <p class="text-gray-400 text-sm">Tuangkan pada media oles secukupnya</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center text-3xl font-bold text-dark">4</div>
+                    <h3 class="font-bold mb-2">Oleskan</h3>
+                    <p class="text-gray-400 text-sm">Oleskan secara merata</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full gradient-gold flex items-center justify-center text-3xl font-bold text-dark">5</div>
+                    <h3 class="font-bold mb-2">Tunggu</h3>
+                    <p class="text-gray-400 text-sm">Tunggu hingga kering</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="https://vt.tiktok.com/ZSHrYyXU8/" target="_blank" class="inline-flex items-center gradient-gold text-dark px-8 py-4 rounded-full font-bold hover-glow">
+                    <i class="fab fa-tiktok mr-2"></i>
+                    Lihat Tutorial di TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Apa Kata <span class="text-gradient">Mereka?</span></h2>
+                <p class="text-gray-400 text-lg">Testimoni dari pelanggan Charcosmear</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-dark-gray p-8 rounded-2xl border border-white/10">
+                    <div class="flex text-gold mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Motor jadi kinclong banget! Gampang aplikasinya dan hasilnya tahan lama. Recommended!"</p>
+                    <p class="text-gold font-semibold">- Ahmad R.</p>
+                </div>
+
+                <div class="bg-dark-gray p-8 rounded-2xl border border-white/10">
+                    <div class="flex text-gold mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Eco-friendly pula, suka banget! Bodinya jadi kinclong dan wangi lemonnya enak."</p>
+                    <p class="text-gold font-semibold">- Rizky M.</p>
+                </div>
+
+                <div class="bg-dark-gray p-8 rounded-2xl border border-white/10">
+                    <div class="flex text-gold mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Penghitam body kasarnya mantap! Warna jadi rata dan nggak belang lagi."</p>
+                    <p class="text-gold font-semibold">- Dimas A.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="kontak" class="py-24 bg-gradient-to-br from-olive-dark to-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Siap Bikin Motor Lo <span class="text-gradient">Kinclong?</span></h2>
+            <p class="text-xl text-gray-300 mb-12">Dapatkan produk Charcosmear sekarang juga dan rasakan perbedaannya!</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://s.shopee.co.id/40cHRS1IVh" target="_blank" class="bg-[#EE4D2D] text-white px-8 py-6 rounded-2xl font-bold text-xl hover:opacity-90 transition flex items-center justify-center">
+                    <i class="fas fa-shopping-bag mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">Beli di</div>
+                        <div>Shopee</div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/charcosmear.id" target="_blank" class="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white px-8 py-6 rounded-2xl font-bold text-xl hover:opacity-90 transition flex items-center justify-center">
+                    <i class="fab fa-instagram mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">Follow</div>
+                        <div>Instagram</div>
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@charcosmear.id" target="_blank" class="bg-black text-white px-8 py-6 rounded-2xl font-bold text-xl hover:opacity-90 transition flex items-center justify-center border border-white/20">
+                    <i class="fab fa-tiktok mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">Follow</div>
+                        <div>TikTok</div>
+                    </div>
+                </a>
+
+                <a href="https://wa.wizard.id/a68495" target="_blank" class="bg-[#25D366] text-white px-8 py-6 rounded-2xl font-bold text-xl hover:opacity-90 transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-sm opacity-90">Chat</div>
+                        <div>WhatsApp</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-12 p-6 bg-dark/50 rounded-2xl">
+                <p class="text-gray-400 mb-2">Atau kunjungi toko kami:</p>
+                <a href="https://shopee.co.id/charcosmear.id" target="_blank" class="text-gold font-semibold hover:underline">
+                    shopee.co.id/charcosmear.id
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div class="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center">
+                        <img src="assets/images/Logo Charcosmear.png" alt="Logo Charcosmear" class="object-cover rounded-full">
+                    </div>
+                    <span class="text-xl font-bold font-heading">charcosmear</span>
+                </div>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="https://www.instagram.com/charcosmear.id" target="_blank" class="text-gray-400 hover:text-gold transition text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@charcosmear.id" target="_blank" class="text-gray-400 hover:text-gold transition text-2xl">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://shopee.co.id/charcosmear.id" target="_blank" class="text-gray-400 hover:text-gold transition text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </div>
+
+                <div class="text-gray-400 text-sm">
+                    © 2026 Charcosmear. All rights reserved.
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>@charcosmear.id | Eco-Friendly Motorcycle Care</p>
+                <p class="mt-2">Karena yang bagus itu bukan cuma tampilan, tapi juga impact-nya. 🌿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button (Mobile) -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="https://s.shopee.co.id/40cHRS1IVh" target="_blank" class="gradient-gold text-dark w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover-glow">
+            <i class="fas fa-shopping-bag text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
