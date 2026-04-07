@@ -86,3 +86,97 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Console log untuk debugging (Updated)
 console.log('Charcosmear Website Loaded Successfully! 🚀');
+
+// Before/After Carousel
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('ba-prev');
+    const nextBtn = document.getElementById('ba-next');
+    const dots = document.querySelectorAll('.dot');
+    const counter = document.getElementById('slide-counter');
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    const goToSlide = (index) => {
+        // Update track position
+        track.style.transform = `translateX(-${index * 100}%)`;
+        
+        // Update dots
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active', 'bg-gold');
+            dot.classList.add('bg-gray-600');
+            if (i === index) {
+                dot.classList.add('active', 'bg-gold');
+                dot.classList.remove('bg-gray-600');
+            }
+        });
+        
+        // Update counter
+        if (counter) {
+            counter.textContent = index + 1;
+        }
+        
+        currentSlide = index;
+    };
+
+    // Event Listeners
+    prevBtn?.addEventListener('click', () => {
+        const newSlide = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+        goToSlide(newSlide);
+    });
+
+    nextBtn?.addEventListener('click', () => {
+        const newSlide = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+        goToSlide(newSlide);
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => goToSlide(index));
+    });
+
+    // Optional: Auto-play every 5 seconds (hapus kalau nggak mau)
+    // setInterval(() => {
+    //     const next = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+    //     goToSlide(next);
+    // }, 5000);
+
+    // Keyboard navigation (aksesibilitas)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            const prev = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+            goToSlide(prev);
+        }
+        if (e.key === 'ArrowRight') {
+            const next = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+            goToSlide(next);
+        }
+    });
+
+    // Touch swipe support (mobile)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+    
+    const handleSwipe = () => {
+        if (touchStartX - touchEndX > 50) {
+            // Swipe left → next slide
+            const next = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+            goToSlide(next);
+        }
+        if (touchEndX - touchStartX > 50) {
+            // Swipe right → prev slide
+            const prev = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+            goToSlide(prev);
+        }
+    };
+});
