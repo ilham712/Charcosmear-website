@@ -180,3 +180,82 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+// Product Gallery Slider Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('gallery-track');
+    if (!track) return; // Stop jika elemen tidak ditemukan
+
+    const slides = document.querySelectorAll('.gallery-slide');
+    const prevBtn = document.getElementById('gal-prev');
+    const nextBtn = document.getElementById('gal-next');
+    const dotsContainer = document.getElementById('gallery-dots');
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    // Buat Dots Otomatis
+    slides.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = `dot w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'bg-gold w-6' : 'bg-gray-600'}`;
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('#gallery-dots .dot');
+
+    const updateDots = (index) => {
+        dots.forEach((dot, i) => {
+            if (i === index) {
+                dot.classList.remove('bg-gray-600', 'w-2');
+                dot.classList.add('bg-gold', 'w-6');
+            } else {
+                dot.classList.remove('bg-gold', 'w-6');
+                dot.classList.add('bg-gray-600', 'w-2');
+            }
+        });
+    };
+
+    const goToSlide = (index) => {
+        currentSlide = index;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        updateDots(currentSlide);
+    };
+
+    // Event Tombol Panah
+    prevBtn?.addEventListener('click', () => {
+        const prevIndex = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+        goToSlide(prevIndex);
+    });
+
+    nextBtn?.addEventListener('click', () => {
+        const nextIndex = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+        goToSlide(nextIndex);
+    });
+
+    // Event Swipe (Touch)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    const handleSwipe = () => {
+        if (touchStartX - touchEndX > 50) {
+            // Swipe Kiri -> Next
+            const nextIndex = currentSlide === totalSlides - 1 ? 0 : currentSlide + 1;
+            goToSlide(nextIndex);
+        }
+        if (touchEndX - touchStartX > 50) {
+            // Swipe Kanan -> Prev
+            const prevIndex = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
+            goToSlide(prevIndex);
+        }
+    };
+});

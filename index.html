@@ -198,8 +198,6 @@
     </div>
 </section>
 
-
-
     <!-- Problem & Solution -->
     <section class="py-20 bg-dark-gray">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -265,6 +263,94 @@
         </div>
       </div>
     </section>
+
+    <!-- Product Gallery Slider (Image Only) -->
+<section class="py-16 bg-dark overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <!-- Container Slider -->
+        <div class="relative group">
+            
+            <!-- Area Gambar -->
+            <div class="overflow-hidden rounded-2xl border-2 border-white/10 bg-dark-gray/50">
+                <div id="gallery-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
+                    
+                    <!-- Gambar 1 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk1.jpg" 
+                             alt="Produk 1" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 2 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk2.jpg" 
+                             alt="Produk 2" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 3 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk3.jpg" 
+                             alt="Produk 3" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 4 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk4.jpg" 
+                             alt="Produk 4" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 5 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk5.jpg" 
+                             alt="Produk 5" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 6 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk6.jpg" 
+                             alt="Produk 6" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 7 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk7.jpg" 
+                             alt="Produk 7" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+
+                    <!-- Gambar 8 -->
+                    <div class="gallery-slide w-full flex-shrink-0 flex items-center justify-center p-4 md:p-8">
+                        <img src="assets/images/Produk8.jpg" 
+                             alt="Produk 8" 
+                             class="max-h-64 md:max-h-96 w-full object-contain">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Tombol Panah (Muncul saat hover / di Desktop) -->
+            <button id="gal-prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-gold/80 hover:bg-gold text-dark w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 md:opacity-100">
+                ‹
+            </button>
+            <button id="gal-next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-gold/80 hover:bg-gold text-dark w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 md:opacity-100">
+                ›
+            </button>
+
+        </div>
+
+        <!-- Dots (Indikator bawah) -->
+        <div id="gallery-dots" class="flex justify-center mt-6 space-x-2">
+            <!-- Dots akan di-generate otomatis oleh Javascript -->
+        </div>
+
+    </div>
+</section>
 
     <!-- Products Section -->
     <section id="produk" class="py-24 bg-dark">
